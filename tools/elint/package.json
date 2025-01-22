@@ -1,0 +1,15 @@
+{
+	"name": "@scifluo-tools/elint",
+	"private": true,
+	"type": "module",
+	"version": "1.0.0",
+	"license": "MPL-2.0",
+	"bin": {
+		"ejslint": "./src/main.js"
+	},
+	"dependencies": {
+		"chalk": "^5.4.1",
+		"ejs-lint": "^2.0.1",
+		"glob": "^11.0.1"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"recommendations": [
+		// Vue
+		"vue.volar",
+
+		// EJS
+		"j69.ejs-beautify",
+		"qassimfarid.ejs-language-support",
+		"digitalbrainstem.javascript-ejs-support",
+
+		// Prettier
+		"esbenp.prettier-vscode",
+
+		// ESLint
+		"dbaeumer.vscode-eslint",
+
+		// Tailwind CSS
+		"bradlc.vscode-tailwindcss",
+
+		// Editor Config
+		"editorconfig.editorconfig",
+
+		// Axe Linter
+		"deque-systems.vscode-axe-linter",
+
+		// Tailwind CSS
+		"bradlc.vscode-tailwindcss"
+	]
+}

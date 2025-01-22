@@ -1,0 +1,7 @@
+{
+	"name": "@scifluo-project/content",
+	"private": true,
+	"type": "module",
+	"version": "1.0.0",
+	"license": "CC-BY-NC-ND-4.0"
+}

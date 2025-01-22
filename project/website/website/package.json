@@ -1,0 +1,31 @@
+{
+	"name": "@scifluo-project/website",
+	"private": true,
+	"type": "module",
+	"version": "1.0.0",
+	"license": "MPL-2.0",
+	"hexo": {
+		"version": "7.3.0"
+	},
+	"scripts": {
+		"dev": "hexo server",
+		"clean": "rimraf db.json build"
+	},
+	"dependencies": {
+		"hexo": "7.3.0",
+		"hexo-add-tips": "link:..\\hexo-add-tips",
+		"hexo-generate-sitemap": "link:..\\hexo-generate-sitemap",
+		"hexo-generate-toc": "link:..\\hexo-generate-toc",
+		"hexo-local-url": "link:..\\hexo-local-url",
+		"hexo-minify-html": "link:..\\hexo-minify-html",
+		"hexo-permalink": "link:..\\hexo-permalink",
+		"hexo-prettier": "link:..\\hexo-prettier",
+		"hexo-render-markdown-it": "link:..\\hexo-render-markdown-it",
+		"hexo-renderer-ejs": "^2.0.0",
+		"hexo-server": "^3.0.0",
+		"hexo-theme-scifluo": "link:..\\hexo-theme-scifluo"
+	},
+	"devDependencies": {
+		"rimraf": "^6.0.1"
+	}
+}

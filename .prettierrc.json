@@ -1,0 +1,38 @@
+{
+	"semi": true,
+	"tabWidth": 4,
+	"useTabs": true,
+	"endOfLine": "lf",
+	"printWidth": 120,
+	"singleQuote": true,
+	"jsxSingleQuote": true,
+	"trailingComma": "all",
+	"arrowParens": "avoid",
+	"bracketSameLine": true,
+	"htmlWhitespaceSensitivity": "strict",
+	"tailwindConfig": "./project/website/hexo-theme-scifluo/tailwind.config.ts",
+	"plugins": ["@prettier/plugin-xml", "prettier-plugin-tailwindcss"],
+	"overrides": [
+		{
+			"files": "*.yml",
+			"options": {
+				"useTabs": false
+			}
+		},
+		{
+			"files": "*.md",
+			"options": {
+				"tabWidth": 2,
+				"useTabs": false
+			}
+		},
+		{
+			"files": "*.xml",
+			"options": {
+				"xmlSelfClosingSpace": true,
+				"xmlSortAttributesByKey": true,
+				"xmlQuoteAttributes": "double"
+			}
+		}
+	]
+}

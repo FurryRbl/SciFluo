@@ -1,0 +1,12 @@
+# Node模块
+node_modules
+
+# 构建输出文件夹
+/build
+/project/website/hexo-theme-scifluo/source
+
+# Hexo 相关
+/project/website/website/db.json
+
+# pnpm
+/pnpm-lock.yaml

@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"allowJs": true,
+		"target": "ES2022",
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"outDir": "./build/tsc",
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"ts-node": {
+		"compilerOptions": {
+			"esm": true,
+			"target": "ES5",
+			"module": "CommonJS"
+		}
+	}
+}

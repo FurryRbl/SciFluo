@@ -1,0 +1,22 @@
+<%
+	let includePath;
+
+	const routes = [
+		{ path: 'wiki/*', template: 'pages/wiki/content/index' },
+		{ path: 'book/*', template: 'pages/book/content/index' },
+	];
+
+	routes.forEach(route => {
+		const regex = new RegExp(`^${route.path.replace('*', '.*')}$`);
+		if (regex.test(page.path)) {
+			includePath = route.template;
+		}
+	});
+
+	if (!includePath) {
+		throw new Error(`无法为“${page.path}}”路径匹配到模板`);
+	}
+
+%>
+
+<%- include(includePath) %>

@@ -1,0 +1,10 @@
+{
+	"name": "@scifluo-tools/build-project",
+	"private": true,
+	"type": "module",
+	"version": "1.0.0",
+	"license": "MPL-2.0",
+	"bin": {
+		"build-project": "./src/main.js"
+	}
+}

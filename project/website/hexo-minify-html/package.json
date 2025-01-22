@@ -1,0 +1,11 @@
+{
+	"name": "hexo-minify-html",
+	"private": true,
+	"version": "1.0.0",
+	"type": "commonjs",
+	"license": "MPL-2.0",
+	"main": "src/main.js",
+	"dependencies": {
+		"html-minifier-terser": "^7.2.0"
+	}
+}
