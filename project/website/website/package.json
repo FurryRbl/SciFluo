@@ -13,7 +13,6 @@
 	},
 	"dependencies": {
 		"hexo": "7.3.0",
-		"hexo-add-tips": "link:..\\hexo-add-tips",
 		"hexo-generate-sitemap": "link:..\\hexo-generate-sitemap",
 		"hexo-generate-toc": "link:..\\hexo-generate-toc",
 		"hexo-local-url": "link:..\\hexo-local-url",

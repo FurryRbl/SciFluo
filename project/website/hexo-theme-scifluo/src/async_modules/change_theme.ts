@@ -1,4 +1,4 @@
-export type Theme = 'light' | 'dark';
+export type Theme = 'light' | 'dark' | string;
 
 export default () => {
 	// 获取切换主题按钮

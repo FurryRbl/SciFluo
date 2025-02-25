@@ -1,9 +1,7 @@
 <main>
-	<p>你好</p>
+	<% site.pages.data.forEach(function(item) { %>
+	<% if (item.path.startsWith('wiki/')) { %>
+	<a href="<%= item.permalink %>"><%= item.title %></a>
+	<% } %>
+	<% }) %>
 </main>
-
-<%
-//console.log(site.pages.data[3].permalink)
-
-const wikiList = `site.pages.data`;
-%>

@@ -4,7 +4,6 @@
 	"indent_char": "\t",
 	"editorconfig": true,
 	"jslint_happy": true,
-	"wrap_line_length": 120,
 	"end_with_newline": true,
 	"indent_with_tabs": true,
 	"space_after_anon_function": true,

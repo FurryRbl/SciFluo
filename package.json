@@ -49,12 +49,14 @@
 	"devDependencies": {
 		"@prettier/plugin-xml": "^3.4.1",
 		"@scifluo-tools/build-project": "link:tools\\build-project",
-		"eslint": "^9.18.0",
+		"@types/node": "^22.13.5",
+		"eslint": "^9.21.0",
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-prettier": "^5.2.3",
 		"eslint-plugin-vue": "^9.32.0",
-		"prettier": "^3.4.2",
-		"prettier-plugin-tailwindcss": "^0.6.10",
+		"hexo": "7.3.0",
+		"prettier": "^3.5.2",
+		"prettier-plugin-tailwindcss": "^0.6.11",
 		"rimraf": "^6.0.1"
 	},
 	"pnpm": {

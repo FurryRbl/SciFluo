@@ -1,28 +1,28 @@
 <header role="banner" class="navbar px-4 justify-between select-none bg-base-100 bg-opacity-55 min-h-auto">
-	<nav role="navigation max-sm:dropdown max-sm:dropdown-bottom">
-		<div tabindex="0" role="button" class="hidden max-sm:block">
+	<nav role="navigation" class="navigation max-sm:dropdown max-sm:dropdown-bottom max-sm:dropdown-right" aria-label="主导航">
+		<div tabindex="0" role="button" aria-label="打开菜单" class="hidden max-sm:block">
 			<%- getIcon("outlined/menu", 24) %>
 		</div>
-		<div tabindex="0" role="menu" aria-label="打开菜单" class="dropdown-content z-[1] flex flex-row max-sm:menu max-sm:w-28 max-sm:flex-col max-sm:rounded-box max-sm:bg-base-100 max-sm:p-2 max-sm:shadow-md">
-			<a href="/" class="nav-link" role="menuitem">
+		<div tabindex="0" role="menu" aria-label="导航菜单" class="dropdown-content z-[1] flex flex-row max-sm:menu max-sm:w-28 max-sm:flex-col max-sm:rounded-box max-sm:bg-base-200 max-sm:p-2 max-sm:shadow-md">
+			<a href="/" class="nav-link" role="menuitem" aria-label="返回首页">
 				<span aria-hidden="true">
 					<%- getIcon("outlined/home", 18) %>
 				</span>
 				<span>首页</span>
 			</a>
-			<a href="/wiki" class="nav-link" role="menuitem">
+			<a href="/wiki" class="nav-link" role="menuitem" aria-label="访问百科">
 				<span aria-hidden="true">
 					<%- getIcon("outlined/description", 18) %>
 				</span>
 				<span>百科</span>
 			</a>
-			<a href="/book" class="nav-link" role="menuitem">
+			<a href="/book" class="nav-link" role="menuitem" aria-label="阅读小说">
 				<span aria-hidden="true">
 					<%- getIcon("outlined/menu_book", 18) %>
 				</span>
 				<span>小说</span>
 			</a>
-			<a href="/map" class="nav-link" role="menuitem">
+			<a href="/map" class="nav-link" role="menuitem" aria-label="查看地图">
 				<span aria-hidden="true">
 					<%- getIcon("outlined/location_on", 18) %>
 				</span>
@@ -43,7 +43,7 @@
 							<%- getIcon("outlined/dark_mode", 20) %>
 						</div>
 					</label>
-					<a href="/settings" title="设置" class="nav-link">
+					<a href="/settings" title="设置" class="nav-link" aria-label="进入设置页面">
 						<%- getIcon("outlined/settings", 20) %>
 					</a>
 				</li>

@@ -1,9 +1,9 @@
-<aside class="hidden xl:block w-1/6">
+<aside class="hidden xl:block w-1/6" aria-labelledby="toc-title" role="navigation">
 	<div class="card p-5 fixed w-1/6">
 		<div class="text-center pb-3 border-slate-400">
-			<h1 class="text-2xl">Wiki 目录</h1>
+			<h2 class="text-2xl">Wiki 目录</h2>
 		</div>
-		<nav id="toc-root" data-overlayscrollbars-initialize>
+		<nav id="toc-root" data-overlayscrollbars-initialize aria-label="页面目录">
 			<%- page.toc_content %>
 		</nav>
 	</div>

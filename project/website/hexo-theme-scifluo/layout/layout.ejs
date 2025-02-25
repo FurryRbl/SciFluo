@@ -1,3 +1,4 @@
+<%- include('common/note.ejs') %>
 <!doctype html>
 <html lang="zh" dir="ltr">
 
@@ -5,7 +6,7 @@
 	<%- include('common/head.ejs') %>
 </head>
 
-<body data-overlayscrollbars-initialize>
+<body aria-live="polite" data-overlayscrollbars-initialize>
 	<%- include('common/header.ejs') %>
 	<div class="flex-1 p-4">
 		<%- body %>

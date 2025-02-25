@@ -6,6 +6,6 @@
 	"license": "MPL-2.0",
 	"main": "src/main.js",
 	"dependencies": {
-		"prettier": "^3.4.2"
+		"prettier": "^3.5.2"
 	}
 }

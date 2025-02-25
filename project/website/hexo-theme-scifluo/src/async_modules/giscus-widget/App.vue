@@ -10,13 +10,16 @@
 		emitMetadata="0"
 		inputPosition="top"
 		:theme="theme"
-		lang="zh-CN"
-		loading="lazy" />
+		lang="zh-CN" />
 </template>
 
 <script lang="ts">
 import Giscus from '@giscus/vue';
-import { getTheme } from '../change_theme';
+import { getTheme, Theme as ThemeType } from '../change_theme';
+
+const getThemeGiscus = (theme: string): ThemeType => {
+	return theme === 'dark' ? 'transparent_dark' : 'light';
+};
 
 export default {
 	name: 'GiscusWidget',
@@ -25,13 +28,13 @@ export default {
 	},
 	data() {
 		return {
-			theme: getTheme(),
+			theme: getThemeGiscus(getTheme()),
 		};
 	},
 	mounted() {
 		window.addEventListener('theme-change', event => {
 			const customEvent = event as CustomEvent;
-			this.theme = customEvent.detail;
+			this.theme = getThemeGiscus(customEvent.detail.theme);
 		});
 	},
 };

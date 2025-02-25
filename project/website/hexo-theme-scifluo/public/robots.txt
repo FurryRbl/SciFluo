@@ -4,5 +4,5 @@ User-agent: *
 Disallow: /assets
 
 Disallow: /404.html
-Disallow: /test.html
 Disallow: /settings.html
+Disallow: /wiki/test.html

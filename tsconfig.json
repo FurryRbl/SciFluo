@@ -6,12 +6,18 @@
 		"module": "ESNext",
 		"skipLibCheck": true,
 		"noImplicitAny": true,
+		"noUnusedLocals": true,
 		"noImplicitThis": true,
 		"outDir": "./build/tsc",
 		"esModuleInterop": true,
-		"moduleResolution": "node",
+		"noUnusedParameters": true,
+		"strictFunctionTypes": true,
+		"moduleResolution": "bundler",
+		"useDefineForClassFields": true,
+		"noFallthroughCasesInSwitch": true,
 		"allowSyntheticDefaultImports": true,
-		"forceConsistentCasingInFileNames": true
+		"forceConsistentCasingInFileNames": true,
+		"types": ["node", "hexo"]
 	},
 	"ts-node": {
 		"compilerOptions": {
@@ -19,5 +25,6 @@
 			"target": "ES5",
 			"module": "CommonJS"
 		}
-	}
+	},
+	"exclude": ["node_modules", "eslint.config.js"]
 }

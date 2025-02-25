@@ -51,6 +51,6 @@ hexo.extend.generator.register('404', () => {
 		data: {
 			title: '找不到页面',
 		},
-		layout: 'layout',
+		layout: 'pages/404',
 	};
 });

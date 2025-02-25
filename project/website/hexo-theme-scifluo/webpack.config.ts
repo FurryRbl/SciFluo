@@ -1,6 +1,5 @@
 import path from 'path';
 import webpack from 'webpack';
-import { VueLoaderPlugin } from 'vue-loader';
 import localPostcssOptions from './postcss.config';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
@@ -9,6 +8,7 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import type { WebpackConfiguration } from 'webpack-dev-server';
 import JsonMinimizerPlugin from 'json-minimizer-webpack-plugin';
 import { EsbuildPlugin, type LoaderOptions } from 'esbuild-loader';
+import { VueLoaderPlugin, type VueLoaderOptions } from 'vue-loader';
 
 export default (env: Record<string, unknown>) => {
 	const isDevelopmentMode = env.WEBPACK_SERVE?.toString() === 'true';
@@ -37,10 +37,15 @@ export default (env: Record<string, unknown>) => {
 			},
 		},
 		devServer: {
-			hot: true,
+			hot: false, // 关闭热重载
 			port: 8200,
 			open: false,
+			compress: false,
+			liveReload: true, // 关闭热重载后启用 liveReload
 			host: '127.0.0.1',
+			client: {
+				overlay: false,
+			},
 			static: {
 				directory: path.resolve('./public'),
 			},
@@ -99,7 +104,7 @@ export default (env: Record<string, unknown>) => {
 					],
 				},
 				{
-					test: /\.(woff|woff2)$/,
+					test: /\.woff2$/,
 					type: 'asset/resource',
 					generator: {
 						filename: 'assets/fonts/[name][hash][ext]',
@@ -126,6 +131,9 @@ export default (env: Record<string, unknown>) => {
 				{
 					test: /\.vue$/,
 					loader: 'vue-loader',
+					options: {
+						hotReload: false, // 关闭热重载
+					} satisfies VueLoaderOptions,
 				},
 			],
 		},
