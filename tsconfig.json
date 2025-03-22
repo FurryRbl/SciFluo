@@ -17,7 +17,8 @@
 		"noFallthroughCasesInSwitch": true,
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
-		"types": ["node", "hexo"]
+		"types": ["node"],
+		"typeRoots": ["node_modules/@types", "./types"]
 	},
 	"ts-node": {
 		"compilerOptions": {
